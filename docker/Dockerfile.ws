@@ -10,11 +10,9 @@ COPY ./turbo.json ./turbo.json
 
 COPY ./app/ws ./app/ws
 
-COPY . .
-
 RUN bun install 
-RUN bun run db:migrate
+RUN bun run db:generate
 
-EXPOSE 8080
+EXPOSE 8081
 
-CMD ["bun", "run", "index.ts"]
+CMD ["bun", "run", "start:ws"]
