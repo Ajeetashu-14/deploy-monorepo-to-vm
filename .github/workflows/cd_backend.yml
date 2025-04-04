@@ -22,4 +22,4 @@ jobs:
           context: .
           file: ./docker/Dockerfile.backend
           push: true
-          tags: Ajeetashu-14/deploy-monorepo-to-vm:${{ github.sha }}
+          tags: ajeet999/deploy-monorepo-to-vm:${{ github.sha }}
