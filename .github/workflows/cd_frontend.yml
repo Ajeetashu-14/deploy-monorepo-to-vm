@@ -1,4 +1,4 @@
-name: CD for backend
+name: CD for frontend
 on: 
   push: 
     branches: [main]
